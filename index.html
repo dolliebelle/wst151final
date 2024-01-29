@@ -1,0 +1,145 @@
+<!Doctype html>
+<html>
+
+<head>
+<title>California Blooms</title>
+
+    <link rel="stylesheet" href="stylesheet1.css">
+    <style>
+        #slideshow {
+            overflow: hidden;
+            width: 60%;
+            height: 60%;
+            padding: 10px;
+            margin: auto;
+        }
+        #slideshow figure {
+            display: flex;
+            flex-direction: column;
+        }
+        #slideshow figure img {
+            width: 50%;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            position: absolute
+        }
+        #slideshow figure img.active {
+            opacity: 1;
+        }
+    </style>
+    
+</head>
+    
+<body>
+    <header>
+        
+        <h1>California Garden Society</h1>
+        
+        <div class="header1">
+            <h2>California Blooms</h2>  
+        </div>
+    
+        <nav>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="index.html"><h3>Home</h3></a></li>
+                    <li><a href="about.html"><h3>About</h3></a></li>
+                    <li><a href="gallery.html"><h3>Blooms</h3></a></li>
+                    <li><a href="location.html"><h3>Location</h3></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+ 
+    <div id="slideshow">        
+        <figure>
+            <img class="active" src="images/bouquet1.jpeg" alt="rosevine">
+            <img src="images/entrance_2.jpg" alt="entrance">
+            <img src="images/beachyard_1.jpg" alt="flowerarch">
+        </figure> 
+    </div>
+  
+    <script>
+        let currentIndex = 0;
+        const images= document.querySelectorAll ('#slideshow figure img');
+       
+       function showImage(index) {
+            currentIndex = (index + images.length) % 
+            images.length;
+           
+            images.forEach((image, i) => {
+               if (i === currentIndex) {
+                   image.classList.add ('active');
+               } 
+               else {
+                   image.classList.remove ('active');
+               }
+           });
+       }
+       function transitionImages () {
+           setInterval (() => {
+               showImage(currentIndex + 1);
+           }, 4000);
+       }
+       
+       transitionImages();
+        
+    </script>
+
+    <div class="welcome">
+        <h2>Welcome to Our Secret Garden</h2>
+        
+        <blockquote>
+            <p>This hidden garden is home to over a thousand blooms with growing varieties of native floras and special kinds from different parts of the world.
+            </p>
+        </blockquote>
+    
+    </div>
+    
+    
+    <div class="features">
+        <div class="pics">
+            <a href="gallery.html">
+            <image src="images/rose_1.jpg" "alt=rose"> 
+            <figcaption><h2>Featured Blooms</h2></figcaption></image></a>
+            <blockquote>
+                <p>The China Rose is one of the many roses in bloom this season.</p>
+            </blockquote>
+        </div>
+            
+        <div class="pics">
+            <a href="location.html">
+            <image src="images/child_1.jpg" "alt=child"> 
+            <figcaption><h2>Create Memories</h2></figcaption></image></a>  
+            <blockquote>
+                <p>Plan your Visit Now. </p>
+            </blockquote>
+        </div>
+        
+        <div class="pics">
+            <a href="about.html">
+            <image src="images/family_1.jpg" alt="family"> 
+                <figcaption><h2>Be a Member</h2></figcaption></image></a> 
+            <blockquote>
+                <p>Donate or Be a Member.</p>
+            </blockquote>
+        </div>
+        
+    </div>
+    
+    <br/><br/><br/><br/><br/><br/><br/>
+
+    <div class="footer">
+        
+        <footer>
+            <h2><a href="about.html"><i>Learn How to be a Green Thumb!</i></a></h2>
+        </footer>
+    
+    </div>
+    
+    
+</body>
+
+</html>
+
+ 

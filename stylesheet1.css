@@ -1,0 +1,181 @@
+/*Slideshow Style Sheet*/
+
+
+/*Main*/
+h2, h3 {
+    font-family: "Helvetica"
+}
+
+h2 {
+    font-size: 25px; 
+    color:#1A281F;
+}
+
+h3 {
+    font-size: 20px
+}
+body {
+    color:#000000;
+    width: 100%;
+}
+
+
+p {
+    font-size: 20px; 
+    font-family:"Helvetica"
+}
+
+/*background color*/
+body {
+    background-color: #FAF3DD;
+}
+
+/*Header*/
+
+h1 {
+    color: #7B886F;
+    font-family: "Helvetica";
+    font-size: 18px;
+    margin: 10px;
+}
+
+.header1 h2 {
+    font-family: "Garamond";
+    color: #FAF3DD;
+}
+
+.header1 {
+    font-size: 20px; 
+    color: #FAF3DD; 
+    background-color: #7B886F; 
+    padding:5px;
+    text-align: center;
+    max-height: 100px;
+}
+
+/*Top Navigation*/
+
+.nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    max-height: 100px;
+}
+
+.nav-list ul {
+    display: flex;
+    text-align: center;
+    max-height: 100px;
+}
+
+.nav-list li {
+    list-style: none; 
+    display: flex;
+    text-align: center
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    color: #7B886F;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    transition: color 0.3s ease;
+    font-family: "Garamond"
+}
+
+.nav-list a:hover {
+    color:#280004;
+}
+
+/*Welcome div*/
+.welcome {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #7B886F;
+    padding: 20px;
+    margin: 600px 20px 20px 20px;
+    text-align: center;
+    align-content: center;
+    position: relative
+}
+.welcome h2{
+    color: #FAF3DD
+}
+
+/*features*/
+.features {
+    max-width: 100%;
+    max-height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    display:grid;
+    grid-column-gap: 5px;
+}
+
+.pics {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px; 
+    margin: auto;
+         
+}
+.pics img {
+    width: 250px;
+    height: 250px;
+    align-content: center;
+    object-fit: contain;
+    margin: 10px 10px 5px 50px;
+   
+}
+
+.features h2 {
+    text-align: center;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    font-family: "Garamond";
+    color: #7B886F;
+}
+.features p {
+    text-align:center;
+    object-fit: contain;
+}
+
+/*footer*/
+
+.footer {
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 10px;
+}
+.footer h2 a {
+    color: #1A281F;
+    transition: color 0.3s ease;
+}
+.footer h2 a:hover {
+    color: #7B886F
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
